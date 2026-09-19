@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="610" height="444" viewBox="0 0 610 444">
+  <title>VibeChat Logo</title>
+  <desc>VibeChat purple chat bubble logo with white V and typing dots, with VibeChat wordmark underneath.</desc>
+
+  <!-- Purple chat bubble -->
+  <path fill="#936EFF" d="M155 0h300c41.42 0 75 33.58 75 75v155c0 41.42-33.58 75-75 75H337l-47 58c-5.6 6.9-16.5 2.9-16.5-6V305h-43.5c-41.42 0-75-33.58-75-75V75c0-41.42 33.58-75 75-75Z"/>
+
+  <!-- White V -->
+  <path fill="#FFFFFF" d="M220 82h48l38 80 39-80h48l-62 137c-4.7 10.4-14.9 17.1-26.3 17.1h-0.9c-11.5 0-21.8-6.8-26.4-17.4L220 82Z"/>
+
+  <!-- White typing dots -->
+  <circle cx="362" cy="196" r="13" fill="#FFFFFF"/>
+  <circle cx="402" cy="196" r="13" fill="#FFFFFF"/>
+  <circle cx="442" cy="196" r="13" fill="#FFFFFF"/>
+
+  <!-- Wordmark: normal/light geometric sans-serif, not bold -->
+  <text x="305" y="415" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="72" font-weight="400" letter-spacing="-2.5">
+    <tspan fill="#FFFFFF">Vibe</tspan><tspan fill="#936EFF">Chat</tspan>
+  </text>
+</svg>

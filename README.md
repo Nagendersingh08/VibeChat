@@ -149,7 +149,6 @@ The following files and folders should not be uploaded to GitHub:
 ```text
 .env
 node_modules/
-dist/
 ```
 
 ## Future Improvements

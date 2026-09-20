@@ -14,11 +14,3 @@ src/
   App.jsx        Route setup
   main.jsx       React app bootstrap
 ```
-
-## Commands
-
-```bash
-npm run dev
-npm run build
-npm run lint
-```

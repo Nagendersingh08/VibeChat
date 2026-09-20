@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900">
+    <stop stop-color="#080914"/><stop offset=".48" stop-color="#17102B"/><stop offset="1" stop-color="#080914"/>
+  </linearGradient>
+  <radialGradient id="purpleGlow">
+    <stop stop-color="#8B5CF6" stop-opacity=".34"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#B79AFF" stop-opacity=".42"/><stop offset="1" stop-color="#6D3BEA" stop-opacity=".04"/>
+  </linearGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="42"/></filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="3"/></filter>
+  <style>
+    .float1{animation:float1 7s ease-in-out infinite}
+    .float2{animation:float2 9s ease-in-out infinite}
+    .float3{animation:float3 8s ease-in-out infinite}
+    .pulse{animation:pulse 3s ease-in-out infinite}
+    .dash{stroke-dasharray:8 18;animation:dash 8s linear infinite}
+    @keyframes float1{50%{transform:translate(18px,-24px)}}
+    @keyframes float2{50%{transform:translate(-22px,20px)}}
+    @keyframes float3{50%{transform:translate(12px,25px)}}
+    @keyframes pulse{50%{opacity:.65}}
+    @keyframes dash{to{stroke-dashoffset:-208}}
+    @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+
+<!-- ambient glow -->
+<ellipse cx="270" cy="170" rx="390" ry="300" fill="url(#purpleGlow)" filter="url(#blur)"/>
+<ellipse cx="1370" cy="720" rx="430" ry="330" fill="url(#purpleGlow)" filter="url(#blur)"/>
+<circle cx="800" cy="450" r="310" fill="#7C3AED" opacity=".035" filter="url(#blur)"/>
+
+<!-- subtle grid -->
+<g opacity=".055" stroke="#C4B5FD">
+  <path d="M0 150H1600M0 300H1600M0 450H1600M0 600H1600M0 750H1600"/>
+  <path d="M160 0V900M320 0V900M480 0V900M640 0V900M800 0V900M960 0V900M1120 0V900M1280 0V900M1440 0V900"/>
+</g>
+
+<!-- animated communication network -->
+<g stroke="url(#stroke)" stroke-width="2" opacity=".32">
+  <path class="dash" d="M55 690L280 520L500 625L700 410L925 555L1140 340L1515 505"/>
+  <path class="dash" d="M-30 350L180 235L400 375L610 205L850 340L1090 165L1630 320"/>
+</g>
+
+<!-- floating chat cards -->
+<g class="float1" opacity=".16" stroke="#C4B5FD" stroke-width="2">
+  <path d="M105 95H270C286 95 299 108 299 124V184C299 200 286 213 270 213H198L164 238L170 213H105C89 213 76 200 76 184V124C76 108 89 95 105 95Z"/>
+  <circle cx="125" cy="153" r="5" fill="#C4B5FD"/>
+  <circle cx="148" cy="153" r="5" fill="#C4B5FD"/>
+  <circle cx="171" cy="153" r="5" fill="#C4B5FD"/>
+</g>
+
+<g class="float2" opacity=".13" stroke="#A78BFA" stroke-width="2">
+  <path d="M1270 610H1460C1477 610 1490 623 1490 640V705C1490 722 1477 735 1460 735H1385L1348 763L1356 735H1270C1253 735 1240 722 1240 705V640C1240 623 1253 610 1270 610Z"/>
+  <path d="M1290 660H1438M1290 685H1380" stroke-linecap="round"/>
+</g>
+
+<g class="float3" opacity=".12" stroke="#D8CCFF" stroke-width="2">
+  <circle cx="1230" cy="180" r="62"/>
+  <path d="M1195 180H1265M1230 145V215"/>
+</g>
+
+<!-- glowing connection nodes -->
+<g class="pulse">
+  <circle cx="280" cy="520" r="7" fill="#A78BFA"/>
+  <circle cx="700" cy="410" r="7" fill="#A78BFA"/>
+  <circle cx="1140" cy="340" r="7" fill="#A78BFA"/>
+</g>
+
+<!-- decorative particles -->
+<g fill="#DDD6FE">
+  <circle cx="430" cy="110" r="2" opacity=".55"/>
+  <circle cx="590" cy="760" r="2" opacity=".4"/>
+  <circle cx="1040" cy="110" r="2" opacity=".5"/>
+  <circle cx="1500" cy="210" r="2" opacity=".5"/>
+  <circle cx="970" cy="790" r="2" opacity=".4"/>
+  <circle cx="180" cy="780" r="2" opacity=".35"/>
+</g>
+</svg>
